@@ -41,9 +41,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <section className="embla" data-aos="fade-up">
-      <div
-        className="arrows"
-      >
+      <div className="arrows">
         <PrevButton
           className="arrows-left"
           onClick={onPrevButtonClick}
@@ -62,7 +60,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div
               className="services__item"
               key={index}
-              data-aos="fade-up" data-aos-duration="600"
+              data-aos="fade-up"
+              data-aos-duration="600"
             >
               <Image
                 src={slide.photo}
@@ -73,32 +72,34 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               />
               <div className="service">
                 <h3 className="service__title">{slide.name}</h3>
-                <p className="service__description">{slide.first_description}</p>
+                <p className="service__description">
+                  {slide.first_description}
+                </p>
                 <p className="service__description2">
                   {!!slide.second_description && slide.second_description}
                 </p>
                 <ul className="service__details">
                   {/* {slide.info.map(
                     ({ message }: { message: string }, index: number) => ( */}
-                      <li key={index} className="service__detail">
-                        <Image
-                          src="/icons/check.svg"
-                          alt=""
-                          height={26}
-                          width={18}
-                        />
-                        <span>{slide.first_advantage}</span>
-                      </li>
-                      <li key={index} className="service__detail">
-                        <Image
-                          src="/icons/check.svg"
-                          alt=""
-                          height={26}
-                          width={18}
-                        />
-                        <span>{slide.second_advantage}</span>
-                      </li>
-                    {/* ),
+                  <li key={index} className="service__detail">
+                    <Image
+                      src="/icons/check.svg"
+                      alt=""
+                      height={26}
+                      width={18}
+                    />
+                    <span>{slide.first_advantage}</span>
+                  </li>
+                  <li key={index} className="service__detail">
+                    <Image
+                      src="/icons/check.svg"
+                      alt=""
+                      height={26}
+                      width={18}
+                    />
+                    <span>{slide.second_advantage}</span>
+                  </li>
+                  {/* ),
                   )} */}
                 </ul>
               </div>

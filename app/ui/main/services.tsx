@@ -60,7 +60,8 @@ const MOCK_SERVICES = [
     title: 'Software development',
     description:
       'We provide full-cycle services for the development, implementation, and maintenance of IT solutions. ',
-    description2: 'We develop functional websites, mobile applications, design user-friendly interfaces, and implement and automate complex business processes.',
+    description2:
+      'We develop functional websites, mobile applications, design user-friendly interfaces, and implement and automate complex business processes.',
     info: [
       { message: 'Full-cycle IT services' },
       { message: 'Expertise in business process automation' },
