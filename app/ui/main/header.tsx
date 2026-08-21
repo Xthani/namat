@@ -88,7 +88,7 @@ export function Header() {
                   <a href="#contact">Contact</a>
                 </li>
                 <li className="navigation__item">
-                  <a href="#contact" style={{ display: 'flex', gap: "15px" }}>
+                  <a href="#contact" style={{ display: 'flex', gap: '15px' }}>
                     <span>Get started</span>
                     <Image
                       src="/icons/right-arrow.svg"
@@ -175,7 +175,7 @@ export function Header() {
               software manufacturers.
             </p>
             <button className="intro__button">
-              <a href="#about" style={{ display: 'flex', gap: "15px" }}>
+              <a href="#about" style={{ display: 'flex', gap: '15px' }}>
                 <span>More about us</span>
                 <Image
                   src="/icons/bottom-arrow.svg"

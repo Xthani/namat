@@ -60,7 +60,6 @@ export function Partners() {
     }
   }, [partnerGroups, partners]);
 
-
   const getPartners = async () => {
     await fetch(`${MAIN_URL}/partners`)
       .then((res) => res.json())
